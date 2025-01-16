@@ -121,6 +121,7 @@ body {
   justify-content: center; /* 讓所有圖片區塊水平居中 */
   width: 1200px; /* 設置圖片區域的寬度為 1200px */
   margin: 0 auto; /* 確保圖片區域在父容器中水平居中 */
+  flex-wrap: wrap; /* 允許換行 */
 }
 
 /* 每個大圖片和文字組合的區塊 */
@@ -210,14 +211,30 @@ body {
   .big-and-mid-image-container {
     display: flex;
     flex-direction: row; /* 水平排列所有項目 */
+    flex-wrap: wrap; /* 允許換行 */
     align-items: center; /* 所有項目居中 */
     padding: 10px; /*讓中、大圖片與小圖片對齊的裁切*/
     width: 100%; /* 確保容器寬度占滿 */
   }
 
-  .mid-image-item,
-  .big-image-item {
+  .title-1,
+  .title-2,
+  .title-3,
+  .title-4,
+  .title-5,
+  .title-6,
+  .title-7,
+  .title-8 {
     width: calc(100% / 4); /* 讓大的圖片佔1/4 */
+    justify-content: center;
+    align-items: center;
+    padding: 10px; /* 網頁要的與左右圖片20的間距 */
+    position: relative; /* 使文字可以絕對定位 */
+  }
+
+  .title-9,
+  .title-10 {
+    width: calc(100% / 2); /* 讓大的圖片佔1/4 */
     justify-content: center;
     align-items: center;
     padding: 10px; /* 網頁要的與左右圖片20的間距 */
